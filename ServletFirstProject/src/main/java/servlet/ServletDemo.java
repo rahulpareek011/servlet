@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 //or implement Servlet
 public class ServletDemo extends HttpServlet{//this class object creation done by container(program)
 	 @Override
-	public void init() throws ServletException {//initialization, when server is started it is called
+	public void init() throws ServletException {//initialization, when server is started it is invoked
 		System.out.println("Init method called");
 	}
 	 
@@ -29,6 +29,7 @@ public class ServletDemo extends HttpServlet{//this class object creation done b
 		 
 		 //2. Prepare the response
 		 resp.setContentType("text/html");
+		 
 		 
 		 //3. Response back
 		 PrintWriter out = resp.getWriter();
